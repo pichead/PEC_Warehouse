@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/style_job.css">
+    <link rel="stylesheet" href="css/style_job_detail.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -92,82 +92,33 @@
                 </div>
             </nav>
 
-            <h2 class="float-left">เกี่ยวกับ Job</h2>
-            <form class="form-inline float-right ml-auto">
-                <input type="text" class="form-control mr-2" placeholder="Job No. / ลูกค้า / สถานะ">
-                <button class="btn btn-outline-success">ค้นหา</button>
-            </form>
-            <br>
-            <br>
-
-            <table class="table table-bordered">
-
-                <thead>
-                    <tr>
-                        <th>No.</th>
-                        <th>Job No.</th>
-                        <th>ลูกค้า</th>
-                        <th>สถานะ</th>
-                        <th></th>
-                    </tr>
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>63/005</td>
-                        <td>TRUE</td>
-                        <td>
-                            <select name="เลือกสถานะ" id="plan">
-                                <option value="กำลังติดตั้ง" selected>*เลือกสถานะ</option>
-                                <option value="กำลังติดตั้ง">กำลังติดตั้ง</option>
-                                <option value="เสร็จสมบูรณ์">เสร็จสมบูรณ์</option>
-                            </select>
-                        </td>
-                        <td>
-                            <button class="btn btn-outline-dark" type="button">Barcode</button>
-                            <button class="btn btn-outline-dark" type="button">รายละเอียด</button>
-                            <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>63/004</td>
-                        <td>TRUE</td>
-                        <td><select name="เลือกสถานะ" id="plan">
-                                <option value="กำลังติดตั้ง" selected>*เลือกสถานะ</option>
-                                <option value="กำลังติดตั้ง">กำลังติดตั้ง</option>
-                                <option value="เสร็จสมบูรณ์">เสร็จสมบูรณ์</option>
-                            </select> </td>
-                        <td>
-                            <button class="btn btn-outline-dark" type="button">Barcode</button>
-                            <button class="btn btn-outline-dark" type="button">รายละเอียด</button>
-                            <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>63/003</td>
-                        <td>TRUE</td>
-                        <td><select name="เลือกสถานะ" id="plan">
-                                <option value="กำลังติดตั้ง" selected>*เลือกสถานะ</option>
-                                <option value="กำลังติดตั้ง">กำลังติดตั้ง</option>
-                                <option value="เสร็จสมบูรณ์">เสร็จสมบูรณ์</option>
-                            </select> </td>
-                        <td>
-                            <button class="btn btn-outline-dark" type="button">Barcode</button>
-                            <button class="btn btn-outline-dark" type="button">รายละเอียด</button>
-                            <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
-
+            <h2 class="float-left">รายละเอียด</h2>
             <div class="container">
+                <div class="row float-right">
+
+                        <button class="btn btn-outline-secondary" type="button">แก้ไข</button>
+
+                        <button class="btn btn-outline-secondary" type="button">ลบ</button>
+
+                </div>
+            <br>
+            <br>
+
+            <div class="d-flex flex-row row-hl">
+                <div class="p-4 item-hl">Flex Item</div>
+            </div>
+
+            
+
+
+
+
+
+
+
+
+
+            <!-- <div class="container">
                 <div class="row">
                     <div class="col-md-3">
                         <button class="btn btn-primary btn-block" type="button">สร้าง</button>
@@ -179,7 +130,7 @@
                         <button class="btn btn-danger btn-block" type="button">ยกเลิก</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="line"></div>
 
