@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Job</title>
+    <title>โปรเจค</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -33,9 +33,6 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#">Job</a>
-                </li>
                 <li>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">งาน</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -47,7 +44,7 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="active">
                     <a href="#">โปรเจค</a>
                 </li>
                 <li>
@@ -92,10 +89,11 @@
                 </div>
             </nav>
 
-            <h2 class="float-left">เกี่ยวกับ Job</h2>
+            <h2 class="float-left">project</h2>
             <form class="form-inline float-right ml-auto">
                 <input type="text" class="form-control mr-2" placeholder="Job No. / ลูกค้า / สถานะ">
                 <button class="btn btn-outline-success">ค้นหา</button>
+                <button class="btn btn-outline-dark">สร้าง</button>
             </form>
             <br>
             <br>
@@ -104,10 +102,7 @@
 
                 <thead>
                     <tr>
-                        <th>No.</th>
-                        <th>Job No.</th>
-                        <th>ลูกค้า</th>
-                        <th>สถานะ</th>
+                        <th>project's name</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -115,51 +110,25 @@
                 <tbody>
 
                     <tr>
-                        <th scope="row">1</th>
-                        <td>63/005</td>
-                        <td>TRUE</td>
+                        <th scope="row">CAT</th>
                         <td>
-                            <select name="เลือกสถานะ" id="plan">
-                                <option value="กำลังติดตั้ง" selected>*เลือกสถานะ</option>
-                                <option value="กำลังติดตั้ง">กำลังติดตั้ง</option>
-                                <option value="เสร็จสมบูรณ์">เสร็จสมบูรณ์</option>
-                            </select>
-                        </td>
-                        <td>
-                            <button class="btn btn-outline-dark" type="button">Barcode</button>
-                            <button class="btn btn-outline-dark" type="button">รายละเอียด</button>
+                            <button class="btn btn-outline-dark" type="button">ระบบแบต</button>
                             <button class="btn btn-outline-dark" type="button">แก้ไข</button>
                         </td>
                     </tr>
 
                     <tr>
-                        <th scope="row">2</th>
-                        <td>63/004</td>
-                        <td>TRUE</td>
-                        <td><select name="เลือกสถานะ" id="plan">
-                                <option value="กำลังติดตั้ง" selected>*เลือกสถานะ</option>
-                                <option value="กำลังติดตั้ง">กำลังติดตั้ง</option>
-                                <option value="เสร็จสมบูรณ์">เสร็จสมบูรณ์</option>
-                            </select> </td>
+                        <th scope="row">DTAC</th>
                         <td>
-                            <button class="btn btn-outline-dark" type="button">Barcode</button>
-                            <button class="btn btn-outline-dark" type="button">รายละเอียด</button>
+                            <button class="btn btn-outline-dark" type="button">ระบบแบต</button>
                             <button class="btn btn-outline-dark" type="button">แก้ไข</button>
                         </td>
                     </tr>
 
                     <tr>
-                        <th scope="row">3</th>
-                        <td>63/003</td>
-                        <td>TRUE</td>
-                        <td><select name="เลือกสถานะ" id="plan">
-                                <option value="กำลังติดตั้ง" selected>*เลือกสถานะ</option>
-                                <option value="กำลังติดตั้ง">กำลังติดตั้ง</option>
-                                <option value="เสร็จสมบูรณ์">เสร็จสมบูรณ์</option>
-                            </select> </td>
+                        <th scope="row">AIS</th>
                         <td>
-                            <button class="btn btn-outline-dark" type="button">Barcode</button>
-                            <button class="btn btn-outline-dark" type="button">รายละเอียด</button>
+                            <button class="btn btn-outline-dark" type="button">ระบบแบต</button>
                             <button class="btn btn-outline-dark" type="button">แก้ไข</button>
                         </td>
                     </tr>
@@ -167,19 +136,6 @@
                 </tbody>
             </table>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <button class="btn btn-primary btn-block" type="button">สร้าง</button>
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn btn-success btn-block" type="button">บันทึก</button>
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn btn-danger btn-block" type="button">ยกเลิก</button>
-                    </div>
-                </div>
-            </div>
 
             <div class="line"></div>
 
