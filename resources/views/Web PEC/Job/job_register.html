@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>โปรเจค</title>
+    <title>Job</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/style_project.css">
+    <link rel="stylesheet" href="css/style_job_register.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -36,19 +36,19 @@
               <li>
                   <a href="../Dashboard.html">หน้าแรก</a>
               </li>
-              <li>
+              <li class="active">
                   <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">งาน</a>
                   <ul class="collapse list-unstyled" id="homeSubmenu">
                       <li>
-                          <a href="../Job/job_detail.html">รายการงาน</a>
+                          <a href="job_detail.html">รายการงาน</a>
                       </li>
                       <li>
-                          <a href="../Job/job_register.html">ลงทะเบียนงาน</a>
+                          <a href="job_register.html">ลงทะเบียนงาน</a>
                       </li>
                   </ul>
               </li>
-              <li class="active">
-                  <a href="Project.html">โปรเจค</a>
+              <li>
+                  <a href="../Project/Project.html">โปรเจค</a>
               </li>
               <li>
                   <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">คลัง</a>
@@ -79,6 +79,7 @@
           </ul>
       </nav>
 
+
         <!-- Page Content  -->
         <div id="content">
 
@@ -91,72 +92,46 @@
 
                 </div>
             </nav>
-            <div class="row">
-              <div class="col-md-1">
-                <h2>project</h2>
-              </div>
-              <div class="col-md-6 offset-md-5 input-group mb-2">
-                <input class="form-control" type="text" placeholder="พิมพ์ที่นี่เพื่อค้นหาโดยใช้ ชื่อลูกค้า">
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-secondary mr-2" type="button">ค้นหา</button>
-                  </div>
-                  <button class="btn btn-outline-dark" type="button">สร้าง</button>
-              </div>
-            </div>
 
+            <h2 class="float-left">รายละเอียด</h2>
+            <div class="container">
+                <div class="row float-right">
+
+                        <button class="btn btn-outline-secondary" type="button">แก้ไข</button>
+
+                        <button class="btn btn-outline-secondary" type="button">ลบ</button>
+
+                </div>
+            <br>
             <br>
 
-            <table class="table1 table-bordered" role="table">
-              <thead role="rowgroup">
-                <tr role="row">
-                  <th role="columnheader">project name</th>
-                  <th role="columnheader">action</th>
+            <div class="d-flex flex-row row-hl">
+                <div class="p-4 item-hl">Flex Item</div>
+            </div>
 
-                </tr>
-              </thead>
-              <tbody role="rowgroup">
-                <tr role="row">
-                  <td role="cell">CAT</td>
-                  <td role="cell">
-                    <button class="btn btn-outline-dark" type="button">ระบบแบต</button>
-                    <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                  </td>
 
-                </tr>
-                <tr role="row">
-                  <td role="cell">DTAC</td>
-                  <td role="cell">
-                    <button class="btn btn-outline-dark" type="button">ระบบแบต</button>
-                    <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                  </td>
 
-                </tr>
-                <tr role="row">
-                  <td role="cell">AIS</td>
-                  <td role="cell">
-                    <button class="btn btn-outline-dark" type="button">ระบบแบต</button>
-                    <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                  </td>
 
-                </tr>
-                <tr role="row">
-                  <td role="cell">SCB</td>
-                  <td role="cell">
-                    <button class="btn btn-outline-dark" type="button">ระบบแบต</button>
-                    <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                  </td>
 
-                </tr>
-                <tr role="row">
-                  <td role="cell">Siriraj</td>
-                  <td role="cell">
-                    <button class="btn btn-outline-dark" type="button">ระบบแบต</button>
-                    <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                  </td>
 
-                </tr>
-              </tbody>
-            </table>
+
+
+
+
+
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <button class="btn btn-primary btn-block" type="button">สร้าง</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-success btn-block" type="button">บันทึก</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-danger btn-block" type="button">ยกเลิก</button>
+                    </div>
+                </div>
+            </div> -->
 
             <div class="line"></div>
 

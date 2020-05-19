@@ -171,16 +171,3 @@ a.article:hover {
 
 
 .sticky-top {position:-webkit-sticky;position:sticky;top:0;z-index:1020}
-
-
-.row-hl {
-    background: #f4f4f4;
-    height: 250px;
-}
-
-.item-hl {
-    border: 1px solid #333;
-}
-
-
-  
