@@ -33,52 +33,51 @@
           </div>
 
           <ul class="list-unstyled components">
-              <li class="active">
-                  <a href="C:\Users\pecte\Documents\GitHub\PEC_Warehouse\resources\views\Web PEC\Dashboard.html">หน้าแรก</a>
-              </li>
               <li>
+                  <a href="../Dashboard.html">หน้าแรก</a>
+              </li>
+              <li class="active">
                   <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">งาน</a>
                   <ul class="collapse list-unstyled" id="homeSubmenu">
                       <li>
-                          <a href="C:\Users\pecte\Documents\GitHub\PEC_Warehouse\resources\views\Web PEC\Job\job.html">รายการงาน</a>
+                          <a href="job_detail.html">รายการงาน</a>
                       </li>
                       <li>
-                          <a href="C:\Users\pecte\Documents\GitHub\PEC_Warehouse\resources\views\Web PEC\Job\job_detail.html">ลงทะเบียนงาน</a>
+                          <a href="job_register.html">ลงทะเบียนงาน</a>
                       </li>
                   </ul>
               </li>
               <li>
-                  <a href="C:\Users\pecte\Documents\GitHub\PEC_Warehouse\resources\views\Web PEC\Project\Project.html">โปรเจค</a>
+                  <a href="../Project/Project.html">โปรเจค</a>
               </li>
               <li>
                   <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">คลัง</a>
                   <ul class="collapse list-unstyled" id="pageSubmenu">
                       <li>
-                          <a href="C:\Users\pecte\Documents\GitHub\PEC_Warehouse\resources\views\Web PEC\Inventory\inventory.html">รายการสินค้า</a>
+                          <a href="../Inventory/inventory.html">รายการสินค้า</a>
                       </li>
                       <li>
-                          <a href="C:\Users\pecte\Documents\GitHub\PEC_Warehouse\resources\views\Web PEC\Inventory\inventory_type.html">ประเภทสินค้า</a>
+                          <a href="../Inventory/inventory_type.html">ประเภทสินค้า</a>
                       </li>
                       <li>
-                          <a href="C:\Users\pecte\Documents\GitHub\PEC_Warehouse\resources\views\Web PEC\Inventory\warranty.html">ประกัน</a>
+                          <a href="../Inventory/warranty.html">ประกัน</a>
                       </li>
                       <li>
-                          <a href="C:\Users\pecte\Documents\GitHub\PEC_Warehouse\resources\views\Web PEC\Inventory\barcode.html">บาร์โค๊ด</a>
+                          <a href="../Inventory/barcode.html">บาร์โค๊ด</a>
                       </li>
                       <li>
-                          <a href="C:\Users\pecte\Documents\GitHub\PEC_Warehouse\resources\views\Web PEC\Inventory\location.html">ย้ายตำแหน่ง</a>
+                          <a href="../Inventory/location.html">ย้ายตำแหน่ง</a>
                       </li>
                       <li>
-                          <a href="C:\Users\pecte\Documents\GitHub\PEC_Warehouse\resources\views\Web PEC\Inventory\search.html">ค้นหาประวัติสินค้า</a>
+                          <a href="../Inventory/search.html">ค้นหาประวัติสินค้า</a>
                       </li>
                       <li>
-                          <a href="C:\Users\pecte\Documents\GitHub\PEC_Warehouse\resources\views\Web PEC\Inventory\recheck.html">ตรวจสอบประจำเดือน</a>
+                          <a href="../Inventory/recheck.html">ตรวจสอบประจำเดือน</a>
                       </li>
                   </ul>
               </li>
           </ul>
       </nav>
-
 
         <!-- Page Content  -->
         <div id="content">
@@ -93,36 +92,119 @@
                 </div>
             </nav>
 
-            <h2 class="float-left">รายละเอียด</h2>
+            <h2 class="float-left">เกี่ยวกับ Job</h2>
+            <form class="form-inline float-right ml-auto">
+                <input type="text" class="form-control mr-2" placeholder="Job No. / ลูกค้า / สถานะ">
+                <button class="btn btn-outline-success">ค้นหา</button>
+            </form>
+            <br>
+            <br>
+
+            <table class="table table-bordered">
+
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Job No.</th>
+                        <th>ลูกค้า</th>
+                        <th>สถานะ</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>63/005</td>
+                        <td>TRUE</td>
+                        <td>
+                            <select name="เลือกสถานะ" id="plan">
+                                <option value="กำลังติดตั้ง" selected>*เลือกสถานะ</option>
+                                <option value="กำลังติดตั้ง">กำลังติดตั้ง</option>
+                                <option value="เสร็จสมบูรณ์">เสร็จสมบูรณ์</option>
+                            </select>
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-dark" type="button">Barcode</button>
+                            <button class="btn btn-outline-dark" type="button">รายละเอียด</button>
+                            <button class="btn btn-outline-dark" type="button">แก้ไข</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>63/004</td>
+                        <td>TRUE</td>
+                        <td><select name="เลือกสถานะ" id="plan">
+                                <option value="กำลังติดตั้ง" selected>*เลือกสถานะ</option>
+                                <option value="กำลังติดตั้ง">กำลังติดตั้ง</option>
+                                <option value="เสร็จสมบูรณ์">เสร็จสมบูรณ์</option>
+                            </select> </td>
+                        <td>
+                            <button class="btn btn-outline-dark" type="button">Barcode</button>
+                            <button class="btn btn-outline-dark" type="button">รายละเอียด</button>
+                            <button class="btn btn-outline-dark" type="button">แก้ไข</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>63/003</td>
+                        <td>TRUE</td>
+                        <td><select name="เลือกสถานะ" id="plan">
+                                <option value="กำลังติดตั้ง" selected>*เลือกสถานะ</option>
+                                <option value="กำลังติดตั้ง">กำลังติดตั้ง</option>
+                                <option value="เสร็จสมบูรณ์">เสร็จสมบูรณ์</option>
+                            </select> </td>
+                        <td>
+                            <button class="btn btn-outline-dark" type="button">Barcode</button>
+                            <button class="btn btn-outline-dark" type="button">รายละเอียด</button>
+                            <button class="btn btn-outline-dark" type="button">แก้ไข</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
             <div class="container">
-                <div class="row float-right">
-
-                        <button class="btn btn-outline-secondary" type="button">แก้ไข</button>
-
-                        <button class="btn btn-outline-secondary" type="button">ลบ</button>
-
-                </div>
-            <br>
-            <br>
-
-            <div class="d-flex flex-row row-hl">
-                <div class="p-4 item-hl">Flex Item</div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-            <!-- <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <button class="btn btn-primary btn-block" type="button">สร้าง</button>
+                        <button class="btn btn-primary btn-block" type="button" data-toggle="modal" data-target="#myModal">สร้าง</button>
+                        <div class="modal" id="myModal">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title">สร้างสถานะของ Job</h5>
+                                <button class="close" data-dismiss="modal">&times;</button>
+                              </div>
+                              <div class="modal-body">
+
+                                <div class="row">
+                                  <div class="col">ประเภทสินค้า</div>
+                                  <div class="col">แบตเตอรี่ VRLA</div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                  <div class="col">สถานะ</div>
+                                  <div class="col">
+                                    <select name="เลือกสถานะ" id="plan">
+                                            <option value="กำลังติดตั้ง" selected>*เลือกสถานะ</option>
+                                            <option value="กำลังติดตั้ง">กำลังติดตั้ง</option>
+                                            <option value="เสร็จสมบูรณ์">เสร็จสมบูรณ์</option>
+                                        </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <br>
+                              <br>
+                              <div class="modal-footer">
+                                <button class="btn btn-primary" data-dismiss="modal">สร้าง</button>
+                                <button class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                     <div class="col-md-3">
                         <button class="btn btn-success btn-block" type="button">บันทึก</button>
@@ -131,9 +213,10 @@
                         <button class="btn btn-danger btn-block" type="button">ยกเลิก</button>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <div class="line"></div>
+
 
         </div>
     </div>
