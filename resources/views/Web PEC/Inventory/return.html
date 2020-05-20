@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>โปรเจค</title>
+    <title>เบิกสินค้า</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/style_project.css">
+    <link rel="stylesheet" href="css/style_return.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -91,76 +91,46 @@
 
                 </div>
             </nav>
+
+
+
             <div class="row">
               <div class="col-md-1">
-                <h2>project</h2>
-              </div>
-              <div class="col-md-6 offset-md-5 input-group mb-2">
-                <input class="form-control" type="text" placeholder="พิมพ์ที่นี่เพื่อค้นหาโดยใช้ ชื่อลูกค้า">
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">ค้นหา</button>
-                  </div>
+                <h2>Return</h2>
               </div>
             </div>
-            <button class="btn btn-outline-dark float-right" type="button">สร้าง</button>
-            <br>
             <br>
 
-            <table class="table1 table-bordered text-center" role="table">
-              <thead role="rowgroup">
-                <tr role="row">
-                  <th role="columnheader">Project's name</th>
-                  <th role="columnheader">Action</th>
+          <div class="row justify-content-center">
+            <div class="col-md-3">
+              <h5>Barcode</h5>
+            </div>
+            <div class="form-group text-center col-md-3 offset-md-0 input-group mb-2">
+                <textarea class="form-control" id="message" rows="5" placeholder="แสกน barcode"></textarea>
+            </div>
+          </div>
 
-                </tr>
-              </thead>
-              <tbody role="rowgroup">
-                <tr role="row">
-                  <td role="cell">CAT</td>
-                  <td role="cell">
-                    <button class="btn btn-outline-dark" type="button">ระบบแบต</button>
-                    <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                  </td>
+          <div class="row justify-content-center">
+            <div class="col-md-3">
+              <h5>จาก Job No.</h5>
+            </div>
+            <div class="form-group text-center col-md-3 offset-md-0 input-group mb-2">
+                <textarea class="form-control" id="message" rows="1" placeholder="job no."></textarea>
+            </div>
+          </div>
 
-                </tr>
-                <tr role="row">
-                  <td role="cell">DTAC</td>
-                  <td role="cell">
-                    <button class="btn btn-outline-dark" type="button">ระบบแบต</button>
-                    <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                  </td>
+          <br>
 
-                </tr>
-                <tr role="row">
-                  <td role="cell">AIS</td>
-                  <td role="cell">
-                    <button class="btn btn-outline-dark" type="button">ระบบแบต</button>
-                    <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                  </td>
-
-                </tr>
-                <tr role="row">
-                  <td role="cell">SCB</td>
-                  <td role="cell">
-                    <button class="btn btn-outline-dark" type="button">ระบบแบต</button>
-                    <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                  </td>
-
-                </tr>
-                <tr role="row">
-                  <td role="cell">Siriraj</td>
-                  <td role="cell">
-                    <button class="btn btn-outline-dark" type="button">ระบบแบต</button>
-                    <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                  </td>
-
-                </tr>
-              </tbody>
-            </table>
-
-            <div class="line"></div>
-
+        <div class="row justify-content-center">
+            <div class="col-md-2">
+                <button class="btn btn-primary btn-block" type="button">คืน</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-danger btn-block" type="button">ยกเลิก</button>
+            </div>
         </div>
+
+        <div class="line"></div>
     </div>
 
 
