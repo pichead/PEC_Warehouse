@@ -91,160 +91,169 @@
 
                 </div>
             </nav>
-
-
-            <h2 class="float-left">รายการสินค้า</h2>
-            <br>
-            <br>
-
-            <div class="float-right">
-                <form class="form-inline">
-                    <input type="text" class="form-control mr-1" placeholder="Job No./Barcode/สถานะ/สถานที่">
-                    <button class="btn btn-outline-success">ค้นหา</button>
-                </form>
+            <div class="row">
+              <div class="col-md-2">
+                <h2>รายการสินค้า</h2>
+              </div>
+              <div class="col-md-5 offset-md-5 input-group mb-2">
+                <input class="form-control" type="text" placeholder="PEC PO / Barcode / ประเภทสินค้า / สถานที่ / ลูกค้า / สถานะสินค้า / อื่นๆ">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">ค้นหา</button>
+                  </div>
+              </div>
             </div>
-
-
-
-
-            <br>
-            <br>
-            <div class="float-right">
-                <button class="btn btn-outline-dark" type="button">แก้ไข</button>
-                <button class="btn btn-outline-dark" type="button">Barcode</button>
-                <button class="btn btn-outline-dark" type="button">สถานะ</button>
-                <button class="btn btn-outline-dark" type="button">สถานที่</button>
-                <button class="btn btn-outline-dark" type="button">ประกัน</button>
-            </div>
-
-            <br>
             <br>
 
 
 
-            <table class="table table-bordered">
+            <table class="table table-bordered text-center">
 
                 <thead>
                     <tr>
                         <th>No.</th>
-                        <th>Job No.</th>
+                        <th>PEC PO</th>
                         <th>Barcode</th>
                         <th>ประเภท</th>
-                        <th>สถานะ</th>
+                        <th>รุ่น</th>
                         <th>สถานที่</th>
-                        <th></th>
+                        <th>project</th>
+                        <th>สถานะล่าสุด</th>
+                        <th>อื่นๆ</th>
+                        <th>เลือก</th>
                     </tr>
                 </thead>
 
                 <tbody>
 
                     <tr>
-                        <th scope="row">1</th>
-                        <td>63/012</td>
-                        <td>370RMRXV2-1912-0001/00063</td>
-                        <td>แบตเตอรี่</td>
-                        <td>สำรอง</td>
+                        <td scope="row">1</td>
+                        <td>PEC047/20</td>
+                        <td>8853042000500</td>
+                        <td>แบตเตอรี่ VRLA</td>
+                        <td>UPS12-370MRX</td>
                         <td>โกดัง PEC</td>
-                        <td>
-                            <input type="checkbox">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>63/012</td>
-                        <td>370RMRXV2-1912-0001/00063</td>
-                        <td>แบตเตอรี่</td>
+                        <td>CAT</td>
                         <td>สำรอง</td>
-                        <td>โกดัง PEC</td>
                         <td>
-                            <input type="checkbox">
+                          <button class="btn btn-primary btn-block" type="button">รายละเอียด</button>
                         </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>63/012</td>
-                        <td>370RMRXV2-1912-0001/00063</td>
-                        <td>แบตเตอรี่</td>
-                        <td>สำรอง</td>
-                        <td>โกดัง PEC</td>
-                        <td>
-                            <input type="checkbox">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>63/012</td>
-                        <td>370RMRXV2-1912-0001/00063</td>
-                        <td>แบตเตอรี่</td>
-                        <td>สำรอง</td>
-                        <td>โกดัง PEC</td>
-                        <td>
-                            <input type="checkbox">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>63/012</td>
-                        <td>370RMRXV2-1912-0001/00063</td>
-                        <td>แบตเตอรี่</td>
-                        <td>สำรอง</td>
-                        <td>โกดัง PEC</td>
-                        <td>
-                            <input type="checkbox">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td>63/012</td>
-                        <td>370RMRXV2-1912-0001/00063</td>
-                        <td>แบตเตอรี่</td>
-                        <td>สำรอง</td>
-                        <td>โกดัง พระราม2</td>
-                        <td>
-                            <input type="checkbox">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td>63/012</td>
-                        <td>370RMRXV2-1912-0001/00063</td>
-                        <td>แบตเตอรี่</td>
-                        <td>สำรอง</td>
-                        <td>โกดัง พระราม2</td>
-                        <td>
-                            <input type="checkbox">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td>63/012</td>
-                        <td>370RMRXV2-1912-0001/00063</td>
-                        <td>แบตเตอรี่</td>
-                        <td>สำรอง</td>
-                        <td>โกดัง พระราม2</td>
                         <td>
                             <input type="checkbox">
                         </td>
                     </tr>
 
+                    <tr>
+                        <td scope="row">2</td>
+                        <td>PEC047/20</td>
+                        <td>8853042000499</td>
+                        <td>แบตเตอรี่ VRLA</td>
+                        <td>UPS12-370MRX</td>
+                        <td>โกดัง PEC</td>
+                        <td>CAT</td>
+                        <td>สำรอง</td>
+                        <td>
+                          <button class="btn btn-primary btn-block" type="button">รายละเอียด</button>
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
 
+                    <tr>
+                        <td scope="row">3</td>
+                        <td>PEC047/20</td>
+                        <td>8853042000498</td>
+                        <td>แบตเตอรี่ VRLA</td>
+                        <td>UPS12-370MRX</td>
+                        <td>โกดัง PEC</td>
+                        <td>CAT</td>
+                        <td>สำรอง</td>
+                        <td>
+                          <button class="btn btn-primary btn-block" type="button">รายละเอียด</button>
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
 
+                    <tr>
+                        <td scope="row">4</td>
+                        <td>PEC047/20</td>
+                        <td>8853042000497</td>
+                        <td>แบตเตอรี่ VRLA</td>
+                        <td>UPS12-370MRX</td>
+                        <td>โกดัง PEC</td>
+                        <td>CAT</td>
+                        <td>สำรอง</td>
+                        <td>
+                          <button class="btn btn-primary btn-block" type="button">รายละเอียด</button>
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">5</td>
+                        <td>PEC047/20</td>
+                        <td>8853042000496</td>
+                        <td>แบตเตอรี่ VRLA</td>
+                        <td>UPS12-370MRX</td>
+                        <td>โกดัง PEC</td>
+                        <td>CAT</td>
+                        <td>สำรอง</td>
+                        <td>
+                          <button class="btn btn-primary btn-block" type="button">รายละเอียด</button>
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                      </tr>
+                      <tr>
+                          <td scope="row">6</td>
+                          <td>PEC047/20</td>
+                          <td>8853042000495</td>
+                          <td>แบตเตอรี่ VRLA</td>
+                          <td>UPS12-370MRX</td>
+                          <td>โกดัง PEC</td>
+                          <td>CAT</td>
+                          <td>สำรอง</td>
+                          <td>
+                            <button class="btn btn-primary btn-block" type="button">รายละเอียด</button>
+                          </td>
+                          <td>
+                              <input type="checkbox">
+                          </td>
+                      </tr>
+
+                      <tr>
+                          <td scope="row">7</td>
+                          <td>PEC047/20</td>
+                          <td>8853042000494</td>
+                          <td>แบตเตอรี่ VRLA</td>
+                          <td>UPS12-370MRX</td>
+                          <td>โกดัง PEC</td>
+                          <td>CAT</td>
+                          <td>สำรอง</td>
+                          <td>
+                            <button class="btn btn-primary btn-block" type="button">รายละเอียด</button>
+                          </td>
+                          <td>
+                              <input type="checkbox">
+                          </td>
+                      </tr>
                 </tbody>
             </table>
 
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <button class="btn btn-primary btn-block" type="button">สร้าง</button>
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn btn-success btn-block" type="button">บันทึก</button>
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn btn-danger btn-block" type="button">ยกเลิก</button>
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-md-2">
+                    <button class="btn btn-success btn-block" type="button">อัพเดคสถาะ / สถานที่</button>
                 </div>
-            </div> -->
+                <div class="col-md-2">
+                    <button class="btn btn-info btn-block" type="button">เบิกสินค้า</button>
+                </div>
+            </div>
+
 
             <div class="line"></div>
 
